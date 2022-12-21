@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/kosz"
+        android:textSize="25dp"
+        android:id="@+id/Koszyk"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/Koszyk"
+        android:layout_marginTop="10dp"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"></LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:id="@+id/recycler_view12">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kwota całkowita: "
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/recycler_view12"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Koszt"></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Przejdź do podsumowania"
+        android:layout_below="@id/Koszt"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:id="@+id/kup">
+
+    </Button>
+
+
+</RelativeLayout>

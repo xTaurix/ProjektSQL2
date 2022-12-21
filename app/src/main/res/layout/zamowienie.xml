@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RelativeLayout">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id = "@+id/obraz"
+            android:layout_marginRight="10dp"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nazwa"
+            android:id="@+id/name"
+            android:layout_toEndOf="@id/obraz"
+            android:textSize="20dp"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cena"
+            android:id="@+id/cena"
+            android:layout_below="@id/name"
+            android:layout_toEndOf="@id/obraz"
+            android:gravity="center">
+
+        </TextView>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/RelativeLayout"
+        android:layout_marginTop="10dp"
+        android:background="#DAD8D8"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ilosc"
+        android:layout_below="@id/linearLayout"
+        android:id="@+id/ilosc"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:id="@+id/ilosc_liczba"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"></TextView>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:id="@+id/seekbar"
+        android:layout_below="@id/ilosc"
+        android:layout_marginTop="15dp"></SeekBar>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="36dp"
+        android:text="+"
+        android:textSize="30dp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="131dp"
+        android:layout_toStartOf="@id/plus"
+        android:text="-"
+        android:textSize="30dp">
+
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/minus"
+        android:layout_marginTop="10dp"
+        android:background="#DAD8D8"
+        android:id="@+id/Line2"
+        android:orientation="horizontal"></LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Line2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/line4">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler_view1">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cena końcowa"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/line4"
+        android:layout_marginLeft="10dp"
+        android:textSize="16dp"
+        android:id="@+id/Cenakoncowa"
+        android:textAlignment="center"></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/wynik"
+        android:layout_below="@id/Cenakoncowa"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"></TextView>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wynik"
+        android:text="@string/zakup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/zakup1">
+
+    </Button>
+
+
+
+</RelativeLayout>

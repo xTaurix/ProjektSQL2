@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ProjektSQL</string>
+    <string name="glowarejestr">Rejestracja</string>
+    <string name="glowalogin">Logowanie</string>
+    <string name="zakup1">zakup</string>
+    <string name="zarejestrujprzycisk">Zarejestruj</string>
+    <string name="zalogujprzycisk">Zaloguj</string>
+    <string name="kosz">KOSZYK</string>
+
+
+
+</resources>

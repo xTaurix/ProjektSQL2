@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcje"
+        android:title="Ustawienia Konta">
+        <menu>
+            <item android:id="@+id/Usun"
+                android:title="Usuń Konto"></item>
+            <item android:id="@+id/Wyloguj"
+                android:title="Wyloguj"></item>
+        </menu>
+    </item>
+    <item android:id="@+id/koszyk" android:title="Koszyk">
+    </item>
+    <item android:id="@+id/zamowienia" android:title="Zamówienia"></item>
+</menu>
